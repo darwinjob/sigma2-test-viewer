@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Scalebar demo</title>
+        <title>iRODS Sigma2 demo</title>
         
         <style>
           #openseadragon {
@@ -25,7 +25,7 @@
           var viewer = OpenSeadragon({
               id:              "openseadragon",
               prefixUrl:       "https://openseadragon.github.io/openseadragon/images/",
-              tileSources:     "https://raw.githubusercontent.com/darwinjob/osd-demo/master/resources/Calb_s3gl4s5_10x/Calb_s3gl4s5_10x.xml"
+              tileSources:     "https://api.nesys.sigma2.no/irods-rest/0.9.1/stream?path=/NESYS/projects/tgArcSwe_atlas/F1__AD_24_1_7_F3/Beta_amyloid_immunostain_F1/pyramids/AD_24_1_7_F3_16_05_12_a.tif/AD_24_1_7_F3_16_05_12_a.tif.xml&count=10000000"
           });
                     
         </script>
