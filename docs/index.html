@@ -1,1 +1,33 @@
-XXX
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Scalebar demo</title>
+        
+        <style>
+          #openseadragon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="openseadragon"></div>
+
+        <script src='openseadragon.min.js'></script>
+        
+        <script>
+        
+          var viewer = OpenSeadragon({
+              id:              "openseadragon",
+              prefixUrl:       "https://openseadragon.github.io/openseadragon/images/",
+              tileSources:     "https://raw.githubusercontent.com/darwinjob/osd-demo/master/resources/Calb_s3gl4s5_10x/Calb_s3gl4s5_10x.xml"
+          });
+                    
+        </script>
+    </body>
+</html>
