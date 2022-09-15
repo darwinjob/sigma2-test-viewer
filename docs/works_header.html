@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>iRODS Sigma2 demo</title>
+        
+        <style>
+          #openseadragon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="openseadragon"></div>
+
+        <script src='openseadragon.min.js'></script>
+        
+        <script>
+        	
+          var viewer = OpenSeadragon({
+              id:              "openseadragon",
+              prefixUrl:       "https://openseadragon.github.io/openseadragon/images/",
+              tileSources:     "https://raw.githubusercontent.com/darwinjob/osd-demo/master/resources/Calb_s3gl4s5_10x/Calb_s3gl4s5_10x.xml",
+              
+              loadTilesWithAjax: true,
+              ajaxHeaders: 
+                // Example of using the viewer-level ajaxHeaders option
+                // for providing an authentication token.
+                
+                	"Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXUyJ9.eyJhdWQiOiJhdWRpZW5jZV9jbGFpbSIsImlhdCI6MTY1NzU2MDMxMiwiaXNzIjoiaXNzdWVfY2xhaW0iLCJuYmYiOjE2NTc1NjAzMTIsInN1YiI6InN1YmplY3RfY2xhaW0iLCJ1c2VyX25hbWUiOiJyb2RzIn0.yB_l6e-NAxjAa4yHF3FeDD2vO-a3HS4h92Qohnq6b7Y"
+                	
+                   	  
+          });
+                    
+        </script>
+    </body>
+</html>
